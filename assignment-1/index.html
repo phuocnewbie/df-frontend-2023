@@ -4,11 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    Hello world
-    <script src="script.js"></script>
+    <div class="main">
+      <header class="header">
+        <div class="container header-wrapper">
+          <h1>Bookstore</h1>
+          <div class="user">
+            <img src="../assets/user-avatar.png" alt="User">
+            <span>John Doe</span>
+          </div>
+        </div>
+      </header>
+      <div class="container content-wrapper">
+        <div class="content-actions">
+          <input type="text" placeholder="Search books" class="search-bar">
+          <button class="btn btn-primary">Add book</button>
+        </div>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Topic</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Refactoring</td>
+              <td>Martin Fowler</td>
+              <td>Programming</td>
+              <td><a href="" class="action-delete">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
